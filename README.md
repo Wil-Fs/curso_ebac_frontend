@@ -1,1 +1,3 @@
-curso ebac frontend execício 1
+Repositório de exercícios
+
+Curso Frontend Ebac!
