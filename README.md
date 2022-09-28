@@ -1,3 +1,3 @@
-Curso frontedn EBAC
+Curso frontend EBAC
 
-exercício 2
+exercício #2
