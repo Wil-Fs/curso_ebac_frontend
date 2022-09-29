@@ -52,7 +52,7 @@ header li :hover {
 
 .articles article {
     width: 30%;
-    padding: 0 0 16px;
+    padding: 0 0 32px;
 }
 
 section h2, 
@@ -99,17 +99,70 @@ section h2 {
     background-color: #132226;
 }
 
-.button a {
+#sports .button a {
     background-color: #525b56;
 }
 
 #economy  {
     
-    background-color: #a4978e;
+    background-color: #8f715b;
 }
+#economy .button a {
+    background-color: #d9ac2a;
+}
+
 #economy .container h2,
 #economy .container time,
 #economy .container p,
 #economy .container h3{
-    color: #040c0e;
+    color: #d8d583;
 }
+
+
+#entertainment{
+    background-color: #04060f;   
+}
+
+#entertainment .button a {
+    background-color: #c1503d;
+}
+
+
+#entertainment .container h2,
+#entertainment .container time,
+#entertainment .container p,
+#entertainment .container h3{
+    color: #c79c93;
+}
+
+#technology .button a {
+    background-color: #8d2f23;
+}
+
+#technology {
+    background-color: #212027;
+}
+
+#technology .container h2,
+#technology .container time,
+#technology .container p,
+#technology .container h3 {
+    color: #f22f08;
+}
+#copy {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 500;
+    width: auto;
+    text-align: center;
+    background-color: #8a2c02;
+    padding-bottom: 1.5cm;
+}
+
+#copy p {
+    color: #eecc8d;
+    padding-top: 1.5cm;
+    position: relative;
+    align-items: center;
+}
+
