@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body > header {
+    width: auto;
+    background-color: #040c0e;
+    display: flex;
+    padding: 16px 0 20px 40px;
+    color: #a4978e;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header li {
+    display: inline;
+    margin: 0 22px 0 22px;
+    font-weight: bold;
+}
+
+header li a {
+    color: #a4978e;
+    text-decoration: none;
+}
+
+header li :hover {
+    font-size: 20px;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    color: #a4978e;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 16px 0 16px;
+}
+
+.articles img{
+    height: 50%;
+    width: 100%;
+}
+
+
+.articles article {
+    width: 30%;
+    padding: 0 0 32px;
+}
+
+section h2, 
+.articles article {
+    color: #ccc;
+}
+
+section h2 {
+    padding: 8px 0 8px 16px;
+}
+
+.articles h3 {
+    margin: 8px 0;
+}
+
+.articles a { 
+    color: #fff;
+    display: inline-block;
+    border-radius: 3px;
+    margin: 3px 0 0 0;
+    padding: 16px 30px;
+    text-decoration: none;
+}
+
+.button :hover {
+    font-size: large;
+    border-radius: 0;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section .articles h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color: #132226;
+}
+
+#sports .button a {
+    background-color: #525b56;
+}
+
+#economy  {
+    
+    background-color: #8f715b;
+}
+#economy .button a {
+    background-color: #d9ac2a;
+}
+
+#economy .container h2,
+#economy .container time,
+#economy .container p,
+#economy .container h3{
+    color: #d8d583;
+}
+
+
+#entertainment{
+    background-color: #04060f;   
+}
+
+#entertainment .button a {
+    background-color: #c1503d;
+}
+
+
+#entertainment .container h2,
+#entertainment .container time,
+#entertainment .container p,
+#entertainment .container h3{
+    color: #c79c93;
+}
+
+#technology .button a {
+    background-color: #8d2f23;
+}
+
+#technology {
+    background-color: #212027;
+}
+
+#technology .container h2,
+#technology .container time,
+#technology .container p,
+#technology .container h3 {
+    color: #f22f08;
+}
+#copy {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 500;
+    width: auto;
+    text-align: center;
+    background-color: #8a2c02;
+    padding-bottom: 1.5cm;
+}
+
+#copy p {
+    color: #eecc8d;
+    padding-top: 1.5cm;
+    position: relative;
+    align-items: center;
+}
+
