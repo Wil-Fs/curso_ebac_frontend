@@ -81,5 +81,13 @@ footer {
     background-color:#272424 ;
     padding: 180px 0 180px 180px;
     width: 100%;
+    display: flex;
 }
 
+footer p {
+    display: flex;
+    max-width: 200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-right: 250px;
+}
