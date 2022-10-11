@@ -68,7 +68,7 @@ form input{
 }
 
 .tarefa-completa{
-    text-decoration: line-through;    
+    text-decoration: 2px line-through #040c0e;    
 }
 
 button,
