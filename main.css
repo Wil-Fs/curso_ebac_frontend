@@ -75,3 +75,7 @@ button,
 input {
     background-color: #132226;
 }
+
+button {
+    cursor: pointer;
+}
