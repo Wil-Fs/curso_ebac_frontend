@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #be9063;
+}
+
+body {
+    background-color: #040c0e;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    background-color: beige;
+}
+
+header {
+    display: flex;
+    padding: 35px;
+}
+
+header h1{
+    margin: 0 16px 0 auto;
+    text-transform: uppercase;
+    font-style: oblique;
+}
+
+header button {
+    padding: 15px;
+    margin: 0 auto 0 0;
+    border: none;
+}
+
+form {
+    background-color: #a4978e;
+    padding: 30px 0;
+    display: none;
+}
+
+form button,
+form input{
+    padding: 10px;
+    border: none;
+}
+
+.tarefa li {
+    padding: 30px 0;;
+    background-color: #525b56;
+    list-style: none;
+    display: none;
+    border-bottom: 1px solid #a4978e;
+}
+
+.tarefa {
+    font-size: 20px;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+
+.tarefa:hover{
+    cursor: pointer;
+}
+
+.tarefa-completa{
+    text-decoration: line-through;    
+}
+
+button,
+input {
+    background-color: #132226;
+}
