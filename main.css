@@ -24,24 +24,26 @@ body{
 
 header{
     width: 100%;
-    padding: 10px;
+    padding: 20px 0 20px 0;
     background-color: #5a0e15;
 }
 
 header h1{
-    max-width: 160px;
+    text-transform: uppercase;
+    font-style: italic;
+    max-width: 200px;
     margin: 0 auto;
 }
 
 section {
+    padding: 40px 0;
     max-width: 400px;
     width: 100%;
     margin: 0 auto;
     justify-content: space-between;
 }
 
-form input,
-form button{
+form input{
     border: none;
     background-color: #282726;
     margin: 0 0 10px 0;
@@ -50,11 +52,27 @@ form button{
     height: 32px;
 }
 
-/*
-input[type=number] {
-    -moz-appearance:textfield;
+#adress{
+    margin-bottom: 4px;
 }
-*/
+#adress2 {
+    margin-top: 2px;
+}
+
+form button {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    background-color: #282726;
+    margin: 0 0 10px 0;
+    display: block;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    align-items: center;
+}
+
 .error {
     display: block;
     margin-bottom: 10px;
