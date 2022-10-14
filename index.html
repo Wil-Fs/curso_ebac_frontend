@@ -5,30 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <title>Lista De Tarefas</title>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <h1>Lista de tarefas</h1>
-            <button id="incluir-tarefa" type="button">Incluir Tarefa</button>
+            <h1>
+                Formulário
+            </h1>
         </header>
-        <form>
-            <input required id="input-tarefa" type="text" placeholder="Tarefa a ser feita">
-            <button  id="button-add">Adicionar +</button>
-            <button type="button" id="button-cancel">Cancelar</button>
-        </form>
-        <ul class="tarefa">
-        </ul>
-        
     </div>
+    <div class="container">
+        <section>
+            <form id="form">
+                <label for="name">Nome completo</label>
+                <input type="text" name="name" id="name">
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone">
+                <label for="adress">Endereço completo</label>
+                <input type="text" name="adress" id="adress">
+                <input type="text" name="adress2" id="adress2" placeholder="Complemento">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="main.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
