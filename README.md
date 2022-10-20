@@ -1,3 +1,3 @@
 # CURSO EBAC FRONTEND
 
-exercício 6#
+exercício 7#
