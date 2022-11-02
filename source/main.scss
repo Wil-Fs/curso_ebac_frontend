@@ -1,0 +1,126 @@
+@use './config/reset';
+@use './config/variaveis';
+
+
+@mixin container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@mixin li {
+    list-style: none;
+}
+
+body {
+    background-color: variaveis.$corDeFundoSite;
+}
+
+header {
+    background-color: variaveis.$corDeFundoHeader;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    & .container {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+
+    & .menu {
+        display: flex;
+
+        & li {
+            @include li;
+            font-weight: bold;
+            margin-left: 24px;
+
+            & a {
+                color: variaveis.$corFontBranca;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+section {
+    padding: 56px 0;
+
+    & .container {
+        @include container;
+
+    }
+
+    & .products {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 32.66%);
+        column-gap: 1%;
+        row-gap: 4%;
+        width: 100%;
+
+        & .product-item {
+            @include li;
+
+            & img {
+                width: 100%;
+                border-radius: 16px;
+            }
+
+            & .product-button {
+                display: block;
+                background-color: variaveis.$corDeFundoButtonProduct;
+                color: variaveis.$corFontBranca;
+                text-align: center;
+                padding: 8px 0;
+                border-radius: 8px;
+                margin-top: 8px;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: variaveis.$corDeFundoButtonProductHover;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: variaveis.$large) {
+
+    header,
+    section {
+
+        & .container {
+            max-width: 80%;
+
+            & .products {
+                grid-template-columns: repeat(2, 48.5%);
+                column-gap: 3%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: variaveis.$small) {
+
+    header,
+    section {
+
+        & .container {
+            max-width: 80%;
+
+            & .products {
+                display: block;
+
+                & .product-item {
+                    margin-bottom: 32px;
+                }
+            }
+        }
+    }
+
+}
