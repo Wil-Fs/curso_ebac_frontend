@@ -1,0 +1,73 @@
+@import 'variaveis.less';
+
+.styleInputButton() {
+    padding: 10px;
+    background-color: @backgroundInput;
+    border: none;
+    color: @colorTextInputButton;
+    font-family: @textFont;
+    font-weight: bold;
+    &::placeholder {
+        color: @colorText;
+    }
+}
+
+.styleInputButtonFocus() {
+    background-color: @backgroundFocus;
+    color: @colorTextFocus;
+    border-bottom: 2px solid #EA2027;
+}
+
+body {
+    background-color: @backgroundAll;
+    color: @colorText;
+    font-weight: bold;
+    font-family: @textFont;
+
+    .container {
+        max-width: 680px;
+        width: 100%;
+        margin: 20px auto;
+        background-color: @backgroundContainer;
+        padding: 30px;
+        text-align: center;
+
+        @media @breakpointMobile {
+            width: 90%;
+        }
+    }
+
+    header {
+        h1 {
+            font-size: 2em;
+            padding: 0 0 15px;
+        }
+
+        input {
+            .styleInputButton();
+            border-bottom: 2px solid #FFC312;
+
+            &:focus {
+                .styleInputButtonFocus();
+            }
+        }
+
+        button {
+            .styleInputButton();
+            border-bottom: 2px solid #FFC312;
+
+            &:hover {
+                .styleInputButtonFocus();
+            }
+        }
+    }
+
+    ul {
+        li {
+            background-color: @backgroundLi;
+            padding: 20px;
+            margin: 0 0 7px;
+            list-style: none;
+        }
+    }
+}
