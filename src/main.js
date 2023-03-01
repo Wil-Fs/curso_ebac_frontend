@@ -7,12 +7,17 @@ const alunosObj = alunos.map((aluno) => {
     }
 });
 
-console.log(alunosObj);
 
-alunosObj.find((aluno) => {
-    if(aluno.nota >= 6) {
-        console.log(aluno);
-    }
-});
+const returnNotas = () => {
+    console.log("Lista de alunos com nota maior/igual a 6:");
+    alunosObj.find((aluno) => {
+        if(aluno.nota >= 6) {
+            console.log(aluno);
+        }
+    });
+}
+
+returnNotas();
+
 
 
